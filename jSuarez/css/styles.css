@@ -89,10 +89,7 @@ header a{
     
     
 } */
-.boton-log-out{
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-}
+
 .container{
     max-width: 120rem;
     margin: 0 auto;
@@ -229,6 +226,17 @@ header a{
     font-weight:100;
     border: none;
     cursor: pointer;
+
+}
+
+.boton{
+    font-size: 1.45rem;
+    text-align: center;
+}
+
+.boton-log-out{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Productos - Productos</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -188,7 +189,7 @@
                         echo '</div>';
                         echo '<form action="productos.php?id='.$lineaActual->getIdLinea().'" method="POST" id="form-ud">';
                         echo '<div>';
-                        echo '<input id="input-id" type="number" name="id" value="'.$a->getId().'"readonly>';
+                        echo '<input style="font-size:1.2rem;" id="input-id" type="number" name="id" value="'.$a->getId().'"readonly>';
                         echo '</div>';
                         echo '<input type="submit" class="boton azul" name = "boton-ud" style="padding-left: 1.5rem; padding-right: 1.5rem;" value="modificar">';
                         $estado = $sqlArticulo->getEstadoArticulo($a->getId());
@@ -236,7 +237,7 @@
                         echo '<input type="text" id="descripcion" name="descripcion" value="'.$a->getDescripcion().'" required>';
                         echo '</div>';
                         echo '<div class="campo">';
-                        echo '<label style="margin: 0 0 0 7.5rem;" for="linea">Linea</label>';
+                        echo '<label style="margin: 0 0 0 9rem;" for="linea">Linea</label>';
                         echo '<select id="idlinea" name="idlinea" required>';
                         $sqlLineas = new SQLLinea();
                         $lineas = $sqlLineas->getLineas();
